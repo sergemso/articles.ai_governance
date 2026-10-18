@@ -1,0 +1,58 @@
+\section{Historical Comparisons: Slowdowns as Transitions}
+
+The four cases that follow are evaluated on a common set of questions: who sets standards, who bears fixed costs, who controls access, how entry is affected, and what evidence demonstrates the result. Where a dimension is not applicable---as with compliance costs in the electrification case---this is stated rather than retrofitted. The cases are used to test the framework's dimensions, not to illustrate a pre-formed conclusion. Each case concludes with a statement of where the analogy to AI fails.
+
+\subsection{Railways: network economics and capital intensity}
+
+The Railway Clearing House (RCH) was instituted in 1842 as a voluntary association of railway companies, given legal status by Act of Parliament in 1850, and incorporated in 1897 with power to regulate membership~\cite{bagwell1974}. Governance was through conferences and committees; management was the responsibility of participating companies' managers and traffic officers. There was no external regulator. The RCH was the industry governing itself---collectively, not through a single dominant firm. Funding was pooled and proportional to participation; outputs were technical and operational (junction diagrams, distance books, standard wagon diagrams). By 1870, the large majority of UK companies had joined.
+
+On the eight dimensions: contestable on governance and funding (collective, proportional, open membership); exclusionary in effect (standardization created technical baselines that new entrants had to meet; the capital intensity of railway construction determined who could enter the network). The exclusion was a property of network economics, not of the RCH's design. Dimensions~3 (publication), 5 (proportionality), and 6 (open-weight) are not applicable: the RCH did not evaluate safety or capability, did not impose compliance obligations, and had no analogue to open-weight models.
+
+The AI case differs in institutional form. The Anthropic/METR arrangement is bilateral, firm-funded (for the commercial evaluator), and firm-designed. The railway case does not predict that AI governance will be captured; it demonstrates that coordination regimes can have exclusionary effects without exclusionary design, and that the distributional outcome depends on whether governance is collective or bilateral.
+
+\subsection{The internet: layer differentiation}
+
+The internet's protocol layer (TCP/IP, DNS) remained open because no firm could capture it; the platform layer (search, social, app distribution) concentrated because network effects and data advantages made capture profitable. Concentration in cloud infrastructure is pronounced: Synergy Research Group's 2024 market-share data shows that Amazon, Microsoft, and Google together account for approximately two-thirds of global cloud infrastructure revenue~\cite{synergy2024}; similar concentration holds for hyperscale data-center capacity~\cite{dcbyte2024}. Openness at the protocol layer was a residual of non-capturability, not a product of governance design; concentration at the platform layer was a product of demand-side network effects, not of rule-writing.
+
+On the eight dimensions: contestable on access at the protocol layer (anyone can implement TCP/IP); exclusionary at the platform layer (access excluded by property, not by rule; algorithmic decision logic is not auditable; compliance costs arrived after concentration, not before). Dimensions~3 (publication) and 5 (proportionality) are not applicable in the protocol layer; they become relevant only at the platform layer, where they were not designed.
+
+Applied to the AI stack: the model layer is partially contestable (open weights exist); the transport layer (compute, data centers, power) is concentrated by property; the distribution layer (API access, cloud inference, app integration) is concentrating; the governance layer (evaluation regimes) is being designed. The Anthropic/METR arrangement is a governance-layer institution. It does not exclude at the model layer or the transport layer. It may exclude at the governance layer---by controlling who can evaluate, on what terms, and with what publication rights.
+
+The internet case therefore predicts that concentration will occur at the distribution and governance layers, not the model layer, and that openness at one layer coexists with concentration at another. Unlike the early internet, AI has no natural open layer to fall back on: the infrastructure is proprietary from the outset, so there is no residual open layer unless policy creates one.
+
+\subsection{Electrification: complementary investment lag}
+
+Electric motors were available in the 1880s, but manufacturing productivity acceleration did not appear until the 1920s. The first generation of factory owners swapped steam engines for electric motors while keeping the shaft-and-belt system (``group drive''). The transformation came with ``unit drive''---each machine with its own motor, factory layout reorganized from power-transmission logic to workflow logic. The lag was not a failure of the technology but of the complementary investments---infrastructure, skills, organizational redesign---that determine whether the technology becomes productive~\cite{david1990}.
+
+On the eight dimensions: dimensions~1, 2, 3, 5, and 6 are not applicable (no evaluation regime, no compliance costs, no publication control, no proportionality obligations, no open-weight analogue). Dimension~4 is the key: access was excluded not by rule but by the time lag of complementary investment. Dimension~7: early adopters bore restructuring costs, but gains were broadly distributed in the 1920s---real manufacturing wages rose, separation rates fell. These were the conditions for a ``golden age.''
+
+The lesson for AI: falling inference costs do not automatically produce deployment gains. The complementary investments---data pipelines, workflow integration, reliability engineering, liability frameworks---determine whether the commoditized capability becomes productive. The Anthropic/METR arrangement is one such complementary investment, and its design determines who can make it. But unlike electrification, where no incumbent designed the factory reorganization, the AI governance layer is being designed by incumbents before the complementary investments are made. The electrification case therefore does not predict that AI deployment will be captured; it predicts that the transition will be slow and uneven, and that the distribution of gains depends on who bears the complementary-investment costs.
+
+\subsection{Nuclear power: institutional design and deployment viability}
+
+Nuclear power was technically feasible by the 1960s, sold as ``too cheap to meter,'' and then became costly, politically fraught, and subject to catastrophic accidents. The Atomic Energy Commission was both promoter and regulator---a structural conflict of interest resolved only by its abolition in 1974. The Price-Anderson Act (1957) capped liability and shifted catastrophic risk to the public. Reactor designs proliferated because the AEC promoted customization rather than standardization; France later standardized on a single design and achieved lower costs. Liability was socialized, costs were borne by ratepayers, and waste disposal remained unresolved.
+
+On the eight dimensions: dimension~1 scores exclusionary (promoter-regulator conflict); dimension~2 scores exclusionary (subsidized risk); dimension~5 scores exclusionary (bespoke designs, no standardization); dimension~7 scores exclusionary (private profits, public risk); dimension~8 scores exclusionary (standardized designs and centralized waste storage existed but were not adopted). Dimensions~3 and 6 are not applicable.
+
+The lesson for AI: technical feasibility is not deployment viability. The institutional design---who bears risk, who sets standards, whether designs are standardized or bespoke---determines whether the technology is deployed at scale and at what cost. The Anthropic/METR template is bespoke, not standardized. The nuclear case predicts that bespoke arrangements produce cost overruns, inconsistent safety cases, and uneven deployment---unless standardization is imposed.
+
+Where the analogy fails: nuclear had a single catastrophic failure mode that concentrated public attention and forced regulatory reform. AI's failure modes are diffuse and do not produce a single Chernobyl moment. The nuclear case therefore does not predict that AI governance will be reformed by crisis; it predicts that without standardization, the costs will be unevenly distributed and the safety case inconsistent across firms.
+
+\subsection{What the four cases establish}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}l X X X X@{}}
+\toprule
+Case & Dimensions tested & Dimensions not applicable & Prediction for AI & Where the analogy fails \\
+\midrule
+Railways & Governance (1), funding (2), access (4), cost distribution (7) & Publication (3), proportionality (5), open-weight (6) & Infrastructure survives the bubble; access determined by capital, not rule & Capital intensity and network economics differ; RCH was collective, not bilateral \\
+Internet & Access (4), cost distribution (7), alternatives (8) & Proportionality (5), publication (3) & Concentration at distribution/governance layers, not model layer & Openness was residual, not designed; AI infrastructure is proprietary from the outset \\
+Electrification & Access (4), cost distribution (7) & Independence (1), funding (2), publication (3), proportionality (5), open-weight (6) & Deployment slow and uneven; gains depend on who bears integration costs & No governance body; lag resolved by market diffusion, not incumbent design \\
+Nuclear & Independence (1), funding (2), proportionality (5), cost distribution (7), alternatives (8) & Publication (3), open-weight (6) & Bespoke arrangements produce cost overruns and inconsistent safety & Single catastrophic failure mode; AI failures are diffuse \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+None of the four predicts that AI will be captured. All four predict that the distributional outcome depends on design choices being made now. The historical section's contribution is not that history repeats, but that the same design dimensions recur across technological revolutions, and that the choice between collective and bilateral governance, between shared and bespoke infrastructure, between proportional and fixed costs, is available in each. The cases provide a comparative vocabulary and a set of sensitizing concepts; they do not provide a demonstrated prediction about AI.

@@ -1,0 +1,46 @@
+{
+  "title": "From AI Scaling to AI Governance: Technological Revolutions and the Political Economy of Deployment",
+  "description": "Perspective / review essay arguing that the relevant change in AI development is not a ceiling on capability but a shift in the economic gradient of deployment. Interprets the shift through Carlota Perez's installation/deployment framework as a transition from product competition to infrastructure competition. Evaluates the Anthropic/METR embedded-evaluator arrangement and the draft bill that would generalize it through an eight-dimension framework that distinguishes observed design features from mechanisms of exclusion and from demonstrated effects. Validates the framework against the EU AI Act's conformity-assessment regime, China's algorithm registration regime, and the UK AI Safety Institute. Includes LaTeX sources, BibTeX bibliography, and Node.js DOCX generation scripts. v3 preprint.",
+  "creators": [
+    {
+      "name": "Strebulaev, Sergei A.",
+      "orcid": "0009-0006-2710-8910",
+      "affiliation": "Independent Researcher"
+    }
+  ],
+  "keywords": [
+    "AI governance",
+    "regulatory capture",
+    "Carlota Perez",
+    "techno-economic paradigms",
+    "embedded evaluators",
+    "open-weight models",
+    "EU AI Act",
+    "algorithmic governance",
+    "infrastructure rent",
+    "Anthropic",
+    "METR",
+    "policy design"
+  ],
+  "license": "CC-BY-4.0",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "access_right": "open",
+  "version": "3.0.0",
+  "language": "en",
+  "communities": [
+    {"identifier": "technology"},
+    {"identifier": "political-science"}
+  ],
+  "related_identifiers": [],
+  "references": [
+    "Perez, C. (2002). Technological Revolutions and Financial Capital.",
+    "Anthropic (2026). An update on independent evaluators.",
+    "METR (2026). Frontier Risk Report, February-March 2026.",
+    "Vercel (2026). AI Gateway Production Index, October 2026.",
+    "Epoch AI (2026). The plunging price of thought.",
+    "European Union (2024). Regulation (EU) 2024/1689 (AI Act).",
+    "NIST (2023). AI Risk Management Framework (AI RMF 1.0).",
+    "UK Government (2023). AI Regulation White Paper, CP 815."
+  ]
+}

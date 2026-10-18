@@ -1,0 +1,123 @@
+\section{An Evaluative Framework for Incumbent-Designed AI Governance}
+
+The empirical case yields a reusable framework. The framework is a \textbf{multidimensional audit}, not a single score or a binary classification. Its job is to expose trade-offs and identify which design features need justification, rather than to assume that every incumbent advantage is illegitimate. A policy can be exclusionary in effect, justified on safety grounds, and still improvable through less restrictive alternatives. The framework assesses trade-offs; it does not score one pole as always preferable.
+
+For each dimension, the audit proceeds in three steps: (1)~\textbf{observed design feature}---what the documents show, with no inference; (2)~\textbf{mechanism producing a barrier}---how the feature might produce a distributional effect, as a plausible mechanism, not an established effect; (3)~\textbf{evidence of competitive effect}---what would show the barrier is material, and what evidence exists versus what is missing. A trade-off note records the possibility that the feature is both exclusionary and justified by safety.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}c l X X X X@{}}
+\toprule
+\# & Dimension & Observed design feature & Mechanism producing a barrier & Evidence of competitive effect & Trade-off note \\
+\midrule
+1 & Independence of evaluators & Who appoints? Who can veto? Who defines redaction categories? & Firm-controlled appointment or redaction can limit the scope of findings that become public & Documented instances of redaction or non-publication; comparison with regimes where evaluators are externally appointed & External appointment may slow evaluation or reduce access to firm expertise \\
+2 & Appointment, funding, oversight & Who pays? Is compensation decoupled from results? Who audits? & Firm funding can create dependency; compensation tied to partnership can discourage critical findings & Evidence of evaluator funding sources; contract terms; instances of critical findings under different funding models & Public funding may be slower and less flexible than firm funding \\
+3 & Control over publication & Can the evaluator publish without approval? Who arbitrates redaction disputes? & Firm approval or broad redaction categories can suppress unfavorable findings & Instances of redaction; disputes over publication; comparison with regimes that default to publication & Some redaction is justified by trade secrets or privacy; the question is scope and arbitrability \\
+4 & Access to evaluation infrastructure & Is there shared infrastructure? Are access terms public and standardized? & Bespoke arrangements raise the fixed cost of entry; shared infrastructure lowers it & Cost of establishing an evaluator relationship; number of firms that can afford it; availability of shared facilities & Shared infrastructure may be slower to adapt to new model types \\
+5 & Proportionality & Are obligations scaled to risk and scale? Are there simplified pathways? & Uniform obligations impose disproportionate costs on smaller firms & Compliance cost as a share of revenue for firms of different sizes; existence of simplified pathways & Uniform obligations may be appropriate if risk is uniform; the question is whether it is \\
+6 & Treatment of open-weight models & Is there a separate regime? Can open-weight developers participate in standards-setting? & Applying pre-release embedded access to public weights is infeasible; excluding open-weight from standards-setting concentrates authority & Existence of open-weight-specific provisions; participation of open-weight developers in standards bodies & Open-weight models may pose distinct risks that require distinct treatment; the question is whether the treatment is feasible and proportionate \\
+7 & Cost distribution & What is the absolute cost? What is the cost relative to firm revenue? & Fixed costs that are trivial for incumbents and prohibitive for entrants create a barrier & Compliance cost as a share of revenue; number of potential entrants excluded & Some fixed costs are unavoidable; the question is whether they are proportionate and whether public funding is available \\
+8 & Less-restrictive alternatives & Were alternatives evaluated? Is there a regulatory impact analysis? & Absence of alternatives analysis suggests the regime was adopted because incumbents proposed it, not because it was the least restrictive means & Existence of regulatory impact analysis; comparison with alternatives & Alternatives may be less effective at achieving safety; the question is whether they were considered \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Read across the rows for the Anthropic/METR case: dimensions 1--3 score mixed (METR publishes without veto, but Anthropic defines redaction categories); dimensions 4--5 register as exclusionary in design but undemonstrated in effect (no shared infrastructure, costs not clearly proportionate); dimension 6 registers as exclusionary by omission (no open-weight regime); dimensions 7--8 register as exclusionary in design but undemonstrated in effect (fixed costs fall equally on unequal firms; alternatives not evaluated). The qualifier ``potentially'' marks where the audit identifies a mechanism whose material effect has not been demonstrated; it does not pronounce verdicts without that evidence.
+
+The framework contributes in three ways. First, it distinguishes safety-enhancing governance from competition-distorting governance without attributing motive: a design can register as exclusionary on five dimensions without anyone intending exclusion. The distributional effect is a property of the design, not of the designer's state of mind. Second, it separates the existence of a design feature from evidence of a material barrier: bespoke access is not inherently exclusionary, and uniform obligations are not always inappropriate. The audit asks what evidence would show the barrier is material, and whether that evidence exists. Third, it is falsifiable per dimension: if the draft bill, when introduced, includes government funding, shared infrastructure, proportionality provisions, and an open-weight regime, the exclusionary prediction is disconfirmed on those dimensions. The framework is a tool for organizing evidence about trade-offs, not a rubric that predetermines its scores.
+
+\subsection{Relationship to existing frameworks}
+
+The eight-dimension audit differs from existing regulatory-capture and competition-policy frameworks in three respects. First, it does not require a judgment about motive: it evaluates design features and their distributional effects, whatever the intent. Second, it is per-dimension and falsifiable: a regime can score contestable on some dimensions and potentially exclusionary on others, and the verdict can change as evidence accumulates. Third, it is designed for the specific institutional form of AI governance---embedded evaluators, access tiers, redaction categories---rather than for traditional utility regulation or antitrust. The framework complements existing work on regulatory capture~\cite{stigler1971}, regulatory entrepreneurship~\cite{jordana2004}, incumbent-led standard-setting~\cite{buthe2011}, and the political economy of regulatory design~\cite{carpenter2014,laffont1991}.
+
+What the framework adds, beyond the general regulatory-capture literature, is engagement with three AI-specific governance regimes that are already in force or in late-stage legislative drafting. Each is sketched here; Sections~5.2--5.4 apply the eight-dimension audit to each.
+
+The \textbf{EU AI Act} (Regulation 2024/1689) is the most ambitious AI-specific regime currently in force. It applies a risk-tiered approach: unacceptable-risk practices are prohibited; high-risk systems require conformity assessment, post-market monitoring, and registration in an EU database; limited-risk systems require transparency obligations; minimal-risk systems are largely unregulated. General-purpose AI models (GPAI) are subject to copyright transparency and to additional obligations if they present systemic risk. Conformity assessment for high-risk systems can be internal (with the firm's own quality-management system and CE marking) or third-party (via a notified body), depending on the system type. The Act entered into force on 1 August 2024 and applies in phases through 2027~\cite{euaiact2024}.
+
+The \textbf{NIST AI Risk Management Framework} (AI RMF 1.0, released January 2023) is a voluntary, non-binding framework organized around four functions: Govern, Map, Measure, Manage~\cite{nist2023}. It is explicitly not a regulatory instrument; NIST is a measurement-and-standards agency without regulatory authority. The companion AI Safety Institute Consortium (AISIC), launched in 2024, includes over 200 member organizations from industry, academia, and civil society. The NIST approach represents the voluntary-consensus alternative to mandatory evaluation regimes---a useful comparison point for assessing whether the Anthropic/METR template's mandatory embedded-access design is the least restrictive means.
+
+The \textbf{UK AI Safety Institute} (AISI), established November 2023 and renamed the AI Security Institute in February 2025, is a government-run, arm's-length body that conducts pre-deployment evaluation of frontier models. AISI has bilateral evaluation agreements with OpenAI, Anthropic, Google DeepMind, and others. The agreements are voluntary; AISI does not have statutory pre-deployment blocking authority. AISI publishes evaluation reports. The UK approach represents the government-run-evaluator alternative to the firm-funded-evaluator template~\cite{ukwhitepaper2023}.
+
+These three regimes differ from the Anthropic/METR template along exactly the dimensions the framework surfaces: who pays (EU: the firm, via fees; NIST: the taxpayer, via NIST's appropriation; UK: the taxpayer, via DSIT funding; Anthropic: mixed, with the deepest-access evaluator unpaid and the commercial evaluator firm-paid); who appoints evaluators (EU: the Commission designates notified bodies; NIST: NIST staff and consortium members; UK: the government; Anthropic: the firm); what publication rights evaluators have (EU: limited; NIST: variable; UK: broad; Anthropic: METR publishes without veto, Accenture arrangement less clear). The framework's value is that these differences become visible as design choices, not as accidents. Sections~5.2--5.4 apply the framework to each regime.
+
+\subsection{Framework validation: the EU AI Act's conformity-assessment regime}
+
+Applying the eight-dimension audit to the EU AI Act tests the framework against a regime designed by a public regulator where the design choices are public. The exercise tests whether the framework produces intelligible results, not whether the AI Act is good policy.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}c l X l X@{}}
+\toprule
+\# & Dimension & EU AI Act feature & Score & Note \\
+\midrule
+1 & Independence & Notified bodies designated by national authorities; accredited to ISO 17021/17065; firms choose among notified bodies but cannot appoint them. & Contestable & Public appointment; firm choice among bodies is a competitive feature. \\
+2 & Funding & Notified bodies charge fees to firms; supervision by national market-surveillance authorities and the AI Office. & Contestable & Fee-funded but with public oversight. Comparable to pharmaceutical GMP inspection. \\
+3 & Publication & Conformity-assessment documentation largely confidential; the public database records registration, not findings. & Mixed & Less transparent than the METR arrangement; trade secrecy is a recognized justification. \\
+4 & Access to infrastructure & Notified bodies are shared infrastructure; firms do not need to negotiate bespoke arrangements. & Contestable & Strong contrast with the Anthropic/METR bespoke model. \\
+5 & Proportionality & Article 43(2) and the SME strategy provide simplified pathways; SMEs may use internal control for some high-risk systems. & Contestable & Proportionality is built in by design, not left to be added later. \\
+6 & Open-weight & GPAI obligations (Article 53) apply to open-weight providers with downstream-provider carve-outs (Article 53(2)). Open-weight is not excluded from the regime. & Contestable & Distinct treatment without exclusion; the regime contemplates open-weight as a category. \\
+7 & Cost distribution & Conformity-assessment fees range widely; SME simplified pathways reduce costs. Compliance cost is non-trivial but proportionality mechanisms exist. & Mixed & Real costs; mitigated by design. \\
+8 & Alternatives & The European Commission's impact assessment (SWD(2021) 84 final) evaluated options including voluntary codes, sectoral legislation, and the horizontal regulation adopted. & Contestable & Alternatives were evaluated and documented before adoption. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The EU AI Act scores contestable on six dimensions and mixed on two. The regime builds in proportionality, shared infrastructure, open-weight treatment, and alternatives analysis. The framework makes these design choices visible as choices, comparable across regimes; the Anthropic/METR template omits all four, and the framework makes the omission visible as a design signature rather than an oversight.
+
+\subsection{Framework validation: China's algorithm registration regime}
+
+China's algorithmic governance regime is structured around three principal instruments: the 2021 Algorithmic Recommendation Provisions, the 2022 Regulations on the Administration of Deep Synthesis, and the 2023 Interim Measures for the Management of Generative AI Services. The regime requires providers of algorithms with public-opinion or social-mobilization attributes to register with the Cyberspace Administration of China (CAC); generative-AI service providers must complete a security assessment and register before public release. The regime is administered by the CAC at the national and provincial levels.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}c l X l X@{}}
+\toprule
+\# & Dimension & China algorithm regime feature & Score & Note \\
+\midrule
+1 & Independence & Evaluators are CAC-designated security-assessment institutions; the firm has no appointment power. & Contestable (state-controlled) & Independent of the firm; not independent of the state. The framework's independence dimension captures firm capture but not state capture. \\
+2 & Funding & Firm pays security-assessment fees to designated institutions; oversight by CAC. & Mixed & Fee-funded with state oversight; comparable to EU model in funding structure, different in evaluator design. \\
+3 & Publication & Security-assessment findings are confidential; registration is recorded in a public CAC database. & Exclusionary on publication & Less transparent than either the EU or the Anthropic/METR model. \\
+4 & Access to infrastructure & Designated security-assessment institutions provide shared infrastructure. & Contestable & Shared infrastructure; not bespoke. \\
+5 & Proportionality & Obligations are uniform for in-scope services; no simplified-pathway provisions equivalent to the EU's SME track. & Potentially exclusionary & Uniform obligations without proportionality mechanisms. \\
+6 & Open-weight & The 2023 Interim Measures apply to generative-AI services provided to the public in China; open-weight models released abroad are outside the regime's direct scope. & Not directly applicable & The regime regulates services, not weights; open-weight is not excluded but is not addressed. \\
+7 & Cost distribution & Compliance costs include security assessment, registration, content moderation, and ongoing reporting. No public data on cost distribution across firm sizes. & Unknown & Data gap; the framework identifies the question. \\
+8 & Alternatives & No public regulatory impact analysis comparing alternatives. & Potentially exclusionary & Alternatives not publicly evaluated. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The China regime scores contestable on three dimensions, mixed on two, potentially exclusionary on two, and unknown on one. The framework reveals a regime that is well-designed against firm capture (the state appoints evaluators) but uncalibrated against state capture (the framework's independence dimension does not address this), with publication opacity and the absence of proportionality or alternatives analysis as the principal weaknesses. The framework's contribution here is diagnostic: it identifies where the regime could be improved and where the framework itself needs extension (a state-capture dimension) to fully evaluate regimes in which the state is the principal regulator.
+
+\subsection{Framework validation: the UK AI Safety Institute}
+
+The UK AI Safety Institute (AISI), established November 2023 and renamed the AI Security Institute in February 2025, is a government-run, arm's-length body within the Department for Science, Innovation and Technology. It conducts pre-deployment evaluation of frontier AI models under voluntary bilateral agreements with OpenAI, Anthropic, Google DeepMind, and other frontier developers. AISI does not have statutory pre-deployment blocking authority; its role is evaluation and reporting, with findings published in periodic International AI Safety Reports and in bilateral evaluation reports.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}c l X l X@{}}
+\toprule
+\# & Dimension & UK AISI feature & Score & Note \\
+\midrule
+1 & Independence & AISI is government-run; evaluators are civil servants and contractors; firms cannot appoint or veto. & Contestable & Independence from the firm is structural; independence from the government of the day is by arm's-length convention. \\
+2 & Funding & Funded by DSIT appropriation; firms do not pay for evaluation. & Contestable & Taxpayer-funded; no firm-funding dependency. The deepest contrast with the Anthropic/Accenture model. \\
+3 & Publication & AISI publishes evaluation reports; firms may redact predefined categories (security-sensitive details). & Contestable & Publication default; firm redaction is scoped. \\
+4 & Access to infrastructure & AISI provides shared evaluation infrastructure; firms do not negotiate bespoke arrangements. & Contestable & Shared infrastructure is the model. \\
+5 & Proportionality & AISI evaluation is voluntary and limited to frontier models; smaller developers are not subject. & Contestable by scope & Proportionality is achieved by scope limitation, not by graduated obligations. \\
+6 & Open-weight & AISI's frontier-evaluation mandate does not extend naturally to open-weight models; the regime is silent. & Not addressed & Same gap as the Anthropic template, but less consequential because the regime is voluntary. \\
+7 & Cost distribution & No firm-side compliance cost beyond evaluation access; the taxpayer bears the cost. & Contestable & Cost distribution is favorable to entrants; the framework's prediction of exclusionary effect is disconfirmed on this dimension. \\
+8 & Alternatives & The UK government's 2023 AI Regulation White Paper evaluated voluntary, sectoral, and statutory approaches before adopting the AISI model. & Contestable & Alternatives were evaluated. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The UK AISI scores contestable on seven dimensions and not addressed on one---the closest to a non-exclusionary design among the four compared. Its principal weakness (the open-weight gap) is shared with the Anthropic template; its principal strength (taxpayer funding, government-run evaluation) is precisely the alternative the Anthropic template does not adopt. The existence of a functioning government-funded alternative empirically tests the Anthropic template's claim that firm-funded evaluators are necessary for safety. The framework does not adjudicate which model is preferable on safety grounds; it identifies that the choice is being made and that the design signature differs across regimes.
+
+\subsection{What the validation establishes}
+
+The three validation cases establish four propositions. First, the eight-dimension framework produces intelligible and discriminating results when applied to regimes with public design choices; it does not collapse all regimes into the same score. Second, the framework identifies design signatures: the EU regime scores contestable on six dimensions, the China regime on three, the UK regime on seven, and the Anthropic template on three (with mixed on three more). Third, the framework's principal gap---the independence dimension captures firm capture but not state capture---is exposed by the China case and should be addressed in a future revision. Fourth, the framework falsifies itself where appropriate: if the Anthropic template's exclusionary prediction is disconfirmed by the introduction of government funding, shared infrastructure, proportionality provisions, and an open-weight regime, the framework's per-dimension verdicts update accordingly.
+
+The validation also confirms what the framework's design intended: that the analytical contribution does not depend on the verification status of any particular empirical claim about the Anthropic arrangement. The framework is a tool for evaluating governance designs; it produces results when applied to regimes that are well-documented (EU, UK) and to regimes that are partially documented (Anthropic, China). Its value is in the comparison across regimes, not in a single verdict on any one. The comparison reveals that the Anthropic template is closer to the China regime than to the EU or UK regimes on several dimensions---not in political logic but in design signature: bespoke rather than shared, firm-funded rather than taxpayer-funded, silent on open-weight rather than addressing it. This is the kind of finding the framework is designed to produce.

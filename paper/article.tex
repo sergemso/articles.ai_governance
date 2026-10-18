@@ -1,0 +1,85 @@
+\documentclass[11pt,a4paper]{article}
+
+% ─────────────────────────────────────────────────────────────
+% Packages
+% ─────────────────────────────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{float}
+% Load hyperref LAST — it patches many commands (\cite, \ref, \section, etc.)
+% and must run after cite, url, and other packages that touch the same hooks.
+\usepackage{hyperref}
+
+% Hyperref configuration
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!black,
+  citecolor=blue!50!black,
+  urlcolor=blue!50!black,
+  pdftitle={From AI Scaling to AI Governance},
+  pdfauthor={Sergei A. Strebulaev},
+  pdfsubject={AI governance; regulatory capture; Carlota Perez},
+  pdfkeywords={AI governance, regulatory capture, Carlota Perez, embedded evaluators, open weights, EU AI Act}
+}
+
+% Spacing
+\setstretch{1.15}
+\setlength{\parskip}{0.4em}
+\setlength{\parindent}{1.5em}
+
+% Section spacing
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{1.6em}{0.8em}
+\titlespacing*{\subsection}{0pt}{1.2em}{0.5em}
+
+% Tighter lists
+\setlist[itemize]{leftmargin=2em,itemsep=0.2em,topsep=0.2em}
+
+% Table column types
+\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+% ─────────────────────────────────────────────────────────────
+% Title block
+% ─────────────────────────────────────────────────────────────
+\title{\Large \textbf{From AI Scaling to AI Governance:\\
+Technological Revolutions and the Political Economy of Deployment}}
+\author{Sergei A. Strebulaev\\
+\small Independent Researcher\\
+\small \texttt{ORCID: 0009-0006-2710-8910}}
+\date{\small v3 preprint - 18 October 2026}
+
+% ─────────────────────────────────────────────────────────────
+% Document
+% ─────────────────────────────────────────────────────────────
+\begin{document}
+
+\maketitle
+
+\input{sections/00_abstract}
+\input{sections/01_introduction}
+\input{sections/02_perez}
+\input{sections/03_empirical}
+\input{sections/03b_gradient}
+\input{sections/04_institutional}
+\input{sections/05_framework}
+\input{sections/06_historical}
+\input{sections/07_conclusion}
+\input{sections/08_backmatter}
+\input{sections/09_references}
+
+\end{document}

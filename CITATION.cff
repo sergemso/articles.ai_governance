@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this manuscript, please cite it as below."
+authors:
+- family-names: Strebulaev
+  given-names: Sergei A.
+  orcid: "https://orcid.org/0009-0006-2710-8910"
+title: "From AI Scaling to AI Governance: Technological Revolutions and the Political Economy of Deployment"
+version: 3.0.0
+date-released: 2026-10-18
+url: "https://github.com/sergemso/articles.ai_governance"
+repository-code: "https://github.com/sergemso/articles.ai_governance"
+license: CC-BY-4.0
+type: manuscript
+keywords:
+- "AI governance"
+- "regulatory capture"
+- "Carlota Perez"
+- "techno-economic paradigms"
+- "embedded evaluators"
+- "open-weight models"
+- "EU AI Act"
+- "algorithmic governance"
+- "infrastructure rent"
+- "Anthropic"
+- "METR"
+preferred-citation:
+  type: manuscript
+  title: "From AI Scaling to AI Governance: Technological Revolutions and the Political Economy of Deployment"
+  authors:
+  - family-names: Strebulaev
+    given-names: Sergei A.
+    orcid: "https://orcid.org/0009-0006-2710-8910"
+  year: 2026
+  month: 10
+  notes: "v3 preprint, deposited on Zenodo"
