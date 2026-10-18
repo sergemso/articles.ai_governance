@@ -103,8 +103,8 @@ If you cite this preprint, please use:
   month        = {oct},
   note         = {v3 preprint},
   howpublished = {Zenodo},
-  doi          = {10.5281/zenodo.23455871},
-  url          = {https://doi.org/10.5281/zenodo.23455871},
+  doi          = {10.5281/zenodo.23455850},
+  url          = {https://doi.org/10.5281/zenodo.23455850},
   license      = {CC-BY-4.0}
 }
 ```
